@@ -55,7 +55,7 @@
 
     <!-- Main CSS File -->
     <link href="{{ asset('arsha/assets/css/main.css') }}" rel="stylesheet">
-
+    <script src="https://cdn.userway.org/widget.js" data-account="F8ts5ygdnQ"></script>
     <!-- =======================================================
   * Template Name: Arsha
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -65,8 +65,31 @@
   ======================================================== -->
 
     <style>
-        .footer {
-            padding-bottom: 0 !important;
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        section,
+        .section {
+            background-color: none !important;
+        }
+
+        body {
+            /* The image used */
+            background-image: url("/arsha/assets/img/bgbantul.jpg");
+
+            /* height: 100%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; */
         }
 
         @keyframes infiniteScroll {
@@ -105,7 +128,7 @@
         .horizontal-scrolling-items {
             display: flex;
             font-size: 40px;
-            width: 2600px;
+            width: 100%;
             animation-name: infiniteScroll;
             animation-duration: 20s;
             animation-iteration-count: infinite;
@@ -132,6 +155,8 @@
     </div>
 </div> --}}
 
+{{-- <div class="bg"></div> --}}
+
 <div class="container-marquee">
     <div class="title">
         Tagline
@@ -139,7 +164,7 @@
     <div class="horizontal-scrolling-items">
 
         <div class="horizontal-scrolling-items__item">
-            Dalam rangka mempertahankan predikat pembangunan ZI-WBBM maka seluruh jajaran Kankemenag Kab Pesisir Selatan berkomitmen untuk senantiasa menjaga integritas dan memberi pelayanan prima dengan tagline <b> PESONA DILAN (Profesional, Efektif, Sistematis, Optimal, Nol Rupiah, Amanah dan Berkeadilan).</b>
+            Dalam rangka mempertahankan predikat pembangunan ZI-WBBM maka seluruh jajaran Kankemenag Kab Pesisir Selatan berkomitmen untuk senantiasa menjaga integritas dan memberi pelayanan prima dengan tagline <b> PESONA DILAN (Profesional, Efektif, Sistematis, Optimal, Nol Rupiah, Amanah dan Berkeadilan).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
         </div>
 
     </div>
@@ -171,10 +196,10 @@
 
                 <h2 style="margin-bottom: 10px !important; padding-bottom:10px !important">SIMPUL SEHATI</h2>
                 {{-- <h3 class="p-0 m-0"><b>SI</b>STEM <b>M</b>ANAJEMEN <b>P</b>ELAYANAN <b>PU</b>B<b>L</b>IK <b>SE</b>PENUH <b>HATI</b></h3> --}}
-                <h3>KANTOR KEMENTERIAN AGAMA KABUPATEN PESISIR SELATAN</h3>
-                <span class="text-muted">
+                <h3 class="p-0 m-0">KANTOR KEMENTERIAN AGAMA KABUPATEN PESISIR SELATAN</h3>
+                <h6>
                     <b>SI</b>STEM <b>M</b>ANAJEMEN <b>P</b>ELAYANAN <b>PU</b>B<b>L</b>IK <b>SE</b>PENUH <b>HATI</b>
-                </span>
+                </h6>
 
                 <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
                 <!-- <p>Sistem Manajemen Pelayanan Publik Sepenuh Hati</p> -->
@@ -190,10 +215,10 @@
                             <div class="service-item position-relative">
                                 <div class="icon">
                                     <center>
-                                        <img src="{{ $item['image_url'] ? $item['image_url'] : 'http://res.cloudinary.com/kemenagpessel/image/upload/v1727767964/profile_picture_pegawai/adioqte79tz0rfjhcx56.png' }}" alt="" width="80" height="80">
+                                        <img src="{{ $item['image_url'] ? $item['image_url'] : 'http://res.cloudinary.com/kemenagpessel/image/upload/v1727767964/profile_picture_pegawai/adioqte79tz0rfjhcx56.png' }}" alt="" height="90">
                                     </center>
                                 </div>
-                                <center>
+                                <center style="padding-top: 20px">
                                     <span><a target="_blank" href="{{ $item['destination_url'] ? $item['destination_url'] : 'javascript:void(0)' }}" class="stretched-link">{{ $item['title'] }}</a></span>
                                 </center>
                             </div>
@@ -261,7 +286,7 @@
             <div class="container section-title" style="padding-top: 50px !important; padding-bottom:0px !important; margin-bottom:0px !important; font-size:x-small;">
 
                 <h5 class="p-0 m-0">SIMPUL SEHATI</h5>
-                <span class="text-muted">Made with 💕 by ours Pranata Komputer</span>
+                <h6 style="font-size: x-small">Made with 💕 by ours Pranata Komputer</h6>
 
                 <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
                 <!-- <p>Sistem Manajemen Pelayanan Publik Sepenuh Hati</p> -->
