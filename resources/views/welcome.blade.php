@@ -4,9 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Arsha Bootstrap Template</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Portal Kemenag Kab Pesisir Selatan</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Portal Kemenag Kab Pesisir Selatan">
+    <meta name="description" content="Portal Web Kementerian Agama Kabupaten Pesisir Selatan">
+    <meta name="keywords" content="Web Kemenag Pesisir Selatan, Portal Web, KemenagPessel, Kementerian Agama Kabupaten Pesisir Selatan">
+    <meta name="author" content="Pramana Yuda Sayeti" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="revisit-after" content="1 Days" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Web Portal Kementerian Agama Kabupaten Pesisir Selatan">
+    <meta property="og:title" content="Web Portal Kementerian Agama Kabupaten Pesisir Selatan ">
+    <meta property="og:locale" content="id_ID">
+
+    <meta property="og:type" content=article />
+    <meta property="og:url" content="{{ URL::current() }}">
+    <meta property="og:description" content="Portal Web Kementerian Agama Kabupaten Pesisir Selatan">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ URL::current() }}">
+    <meta property="twitter:title" content="Portal Web Kementerian Agama Kabupaten Pesisir Selatan">
+    <meta property="twitter:description" content="Portal Web Kementerian Agama Kabupaten Pesisir Selatan">
+    <meta property="twitter:image" content="">
+    <meta name="twitter:site" content="{{ URL::current() }}" />
+
+    <link rel="canonical" href="{{ URL::current() }}" />
+    <link rel="alternate" hreflang="en-US" href="{{ URL::current() }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ URL::current() }}" />
+
 
     <!-- Favicons -->
     <link href="{{ asset('arsha/assets/img/favicon.png') }}" rel="icon">
