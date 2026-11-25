@@ -28,8 +28,5 @@
         @elseif ($employee->employment_type === \App\Models\Employee::TYPE_NON_ASN)
             <span class="org-card__nip">Non-ASN</span>
         @endif
-        @if ($note = $position->versionNote($version))
-            <span class="org-card__note">{{ $note }}</span>
-        @endif
     </span>
 </{{ $tag }}>

@@ -105,23 +105,6 @@
             color: #fff;
         }
 
-        .org-card__note {
-            display: inline-block;
-            align-self: flex-start;
-            margin-top: 4px;
-            padding: 1px 8px;
-            border-radius: 999px;
-            background: #fdf0d5;
-            color: #7a4b00;
-            font-size: .68rem;
-            font-weight: 600;
-            line-height: 1.5;
-        }
-
-        .org-card--stack .org-card__note {
-            align-self: center;
-        }
-
         .org-actions {
             display: flex;
             flex-wrap: wrap;
