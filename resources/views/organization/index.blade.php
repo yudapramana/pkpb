@@ -122,10 +122,101 @@
             align-self: center;
         }
 
+        .org-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 14px;
+        }
+
+        .org-actions .org-version {
+            margin-top: 0;
+        }
+
+        .org-print {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border: 0;
+            border-radius: 999px;
+            background: #fff;
+            color: var(--org-teal);
+            font: inherit;
+            font-size: .8rem;
+            font-weight: 600;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+            cursor: pointer;
+        }
+
+        .org-print:hover,
+        .org-print:focus-visible {
+            background: var(--org-teal);
+            color: #fff;
+        }
+
+        .org-print[disabled] {
+            opacity: .6;
+            cursor: progress;
+        }
+
+        /* Unduh gambar (PNG/JPG) */
+        .org-export {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 3px 3px 3px 14px;
+            border-radius: 999px;
+            background: rgba(36, 82, 79, .12);
+        }
+
+        .org-export__label {
+            font-size: .8rem;
+            font-weight: 600;
+            color: var(--org-teal);
+        }
+
+        .org-export__scope {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 10px;
+            font: inherit;
+            font-size: .8rem;
+            color: var(--org-teal);
+            background: #fff;
+        }
+
+        .org-export .org-print {
+            padding: 6px 14px;
+        }
+
+        .org-export__status {
+            min-height: 1.2em;
+            margin: 8px 0 0;
+            font-size: .8rem;
+            color: var(--org-teal);
+        }
+
+        /* Saat membuat gambar: tata letak lebar tetap dipakai walau dibuka di layar kecil. */
+        html.is-exporting body {
+            width: 1280px;
+        }
+
+        @media print {
+            .org-export__status {
+                display: none !important;
+            }
+        }
+
+        /* Tombol & tautan tidak ikut tercetak / masuk PDF. */
         @media print {
             .org-header__link,
-            .org-version {
-                display: none;
+            .org-actions {
+                display: none !important;
             }
         }
 
@@ -372,41 +463,42 @@
         }
 
         /* ---------- Layar kecil: bagan jadi daftar bertingkat ---------- */
-        @media (max-width: 991.98px) {
-            .org-trunk {
+        /* Hanya di layar: saat dicetak, bagan tetap memakai tata letak lebar (lihat @page). */
+        @media screen and (max-width: 991.98px) {
+            html:not(.is-exporting) .org-trunk {
                 grid-template-columns: 1fr;
                 min-height: 0;
                 justify-items: center;
                 gap: 0;
             }
 
-            .org-trunk__spacer {
+            html:not(.is-exporting) .org-trunk__spacer {
                 display: none;
             }
 
-            .org-trunk__line {
+            html:not(.is-exporting) .org-trunk__line {
                 width: 2px;
                 height: 24px;
             }
 
-            .org-trunk__side {
+            html:not(.is-exporting) .org-trunk__side {
                 padding: 0;
                 width: 100%;
                 align-items: center;
             }
 
-            .org-trunk__side .org-card::before {
+            html:not(.is-exporting) .org-trunk__side .org-card::before {
                 display: none;
             }
 
-            .org-trunk::after {
+            html:not(.is-exporting) .org-trunk::after {
                 content: "";
                 width: 2px;
                 height: 24px;
                 background: var(--org-line);
             }
 
-            .org-branches {
+            html:not(.is-exporting) .org-branches {
                 flex-direction: column;
                 gap: 12px;
                 margin-left: 12px;
@@ -414,15 +506,15 @@
                 border-left: 2px solid var(--org-line);
             }
 
-            .org-branch {
+            html:not(.is-exporting) .org-branch {
                 padding: 0;
             }
 
-            .org-branch::before {
+            html:not(.is-exporting) .org-branch::before {
                 display: none;
             }
 
-            .org-branch::after {
+            html:not(.is-exporting) .org-branch::after {
                 top: 50%;
                 left: -20px;
                 width: 20px;
@@ -431,34 +523,80 @@
                 border-top: 2px solid var(--org-line);
             }
 
-            .org-branch .org-card--stack {
+            html:not(.is-exporting) .org-branch .org-card--stack {
                 flex-direction: row;
                 text-align: left;
                 border-radius: 999px;
                 padding: 6px 18px 6px 6px;
             }
 
-            .org-branch__label {
+            html:not(.is-exporting) .org-branch__label {
                 display: none;
             }
 
-            .org-unit__grid {
+            html:not(.is-exporting) .org-unit__grid {
                 grid-template-columns: 1fr;
             }
+        }
+
+        /* ---------- Cetak / simpan PDF ---------- */
+        @page {
+            size: A4 landscape;
+            margin: 10mm;
         }
 
         @media print {
             body {
                 background: #fff;
+                font-size: 12px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .org-header {
+                padding-top: 0;
+            }
+
+            .org-header img {
+                width: 64px;
+            }
+
+            .org-chart {
+                margin-top: 16px;
+                break-inside: avoid;
+                break-after: page;
             }
 
             .org-card {
                 box-shadow: none;
-                border: 1px solid #ccc;
+                border: 1px solid #c9c9c9;
+                transform: none !important;
+                break-inside: avoid;
+            }
+
+            .org-units {
+                margin-top: 32px;
+                padding-bottom: 0;
+                gap: 14px;
             }
 
             .org-unit {
-                break-inside: avoid;
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 12px 14px 14px;
+            }
+
+            .org-unit__head {
+                break-after: avoid;
+            }
+
+            .org-unit__grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+
+            .org-footer {
+                padding-bottom: 0;
             }
         }
     </style>
@@ -477,12 +615,27 @@
         @endif
         <p class="org-header__meta">Versi: {{ $versionLabel }}</p>
 
-        <nav class="org-version" aria-label="Pilih versi">
-            @foreach ($versionLinks as $link)
-                <a href="{{ $link['url'] }}" class="{{ $link['active'] ? 'is-active' : '' }}"
-                    @if ($link['active']) aria-current="page" @endif>{{ $link['label'] }}</a>
-            @endforeach
-        </nav>
+        <div class="org-actions">
+            <nav class="org-version" aria-label="Pilih versi">
+                @foreach ($versionLinks as $link)
+                    <a href="{{ $link['url'] }}" class="{{ $link['active'] ? 'is-active' : '' }}"
+                        @if ($link['active']) aria-current="page" @endif>{{ $link['label'] }}</a>
+                @endforeach
+            </nav>
+            <button type="button" class="org-print" id="org-print">
+                <i class="bi bi-printer" aria-hidden="true"></i> Cetak / Simpan PDF
+            </button>
+            <div class="org-export" role="group" aria-label="Unduh sebagai gambar">
+                <label for="org-export-scope" class="org-export__label"><i class="bi bi-image" aria-hidden="true"></i> Unduh gambar</label>
+                <select id="org-export-scope" class="org-export__scope">
+                    <option value="full">Halaman penuh</option>
+                    <option value="chart">Bagan saja</option>
+                </select>
+                <button type="button" class="org-print js-export" data-format="png">PNG</button>
+                <button type="button" class="org-print js-export" data-format="jpg">JPG</button>
+            </div>
+        </div>
+        <p class="org-export__status" id="org-export-status" role="status" aria-live="polite"></p>
 
         <p class="org-header__link">
             <a href="{{ route('organization.tree', $versionQuery) }}"><i class="bi bi-diagram-3"></i> Bagan tanpa foto</a>
@@ -575,6 +728,168 @@
     <footer class="org-footer">
         &copy; {{ date('Y') }} {{ config('organization.title') }}
     </footer>
+
+    <script>
+        (function () {
+            // Foto memakai loading="lazy": muat semuanya dulu agar ikut tercetak / masuk PDF.
+            function loadAllImages() {
+                var images = Array.prototype.slice.call(document.images);
+                return Promise.all(images.map(function (img) {
+                    img.loading = 'eager';
+                    if (img.complete) return Promise.resolve();
+                    return new Promise(function (resolve) {
+                        img.addEventListener('load', resolve, { once: true });
+                        img.addEventListener('error', resolve, { once: true });
+                    });
+                }));
+            }
+
+            var button = document.getElementById('org-print');
+            if (button) {
+                button.addEventListener('click', function () {
+                    button.disabled = true;
+                    loadAllImages().then(function () {
+                        button.disabled = false;
+                        // Pilih "Simpan sebagai PDF" di dialog cetak untuk mengekspor PDF.
+                        window.print();
+                    });
+                });
+            }
+
+            // Jika dicetak lewat Ctrl+P, tetap minta browser memuat semua foto.
+            window.addEventListener('beforeprint', loadAllImages);
+
+            // ---------- Unduh sebagai gambar (PNG / JPG) ----------
+            var HTML2CANVAS_URL = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
+            var EXPORT_WIDTH = 1280;          // lebar tata letak desktop
+            var MAX_PIXELS = 16000000;        // batas aman ukuran kanvas (Safari iOS ~16,7 juta piksel)
+            var BACKGROUND = '#ebe5d6';
+            var status = document.getElementById('org-export-status');
+            var exportButtons = document.querySelectorAll('.js-export');
+            var html2canvasPromise = null;
+
+            // Pustaka dimuat hanya saat dibutuhkan.
+            function loadHtml2Canvas() {
+                if (window.html2canvas) return Promise.resolve(window.html2canvas);
+                if (!html2canvasPromise) {
+                    html2canvasPromise = new Promise(function (resolve, reject) {
+                        var script = document.createElement('script');
+                        script.src = HTML2CANVAS_URL;
+                        script.async = true;
+                        script.onload = function () { resolve(window.html2canvas); };
+                        script.onerror = function () {
+                            html2canvasPromise = null;
+                            reject(new Error('Gagal memuat pustaka html2canvas.'));
+                        };
+                        document.head.appendChild(script);
+                    });
+                }
+                return html2canvasPromise;
+            }
+
+            function setBusy(busy, message) {
+                Array.prototype.forEach.call(exportButtons, function (b) { b.disabled = busy; });
+                status.textContent = message || '';
+            }
+
+            function fileName(ext) {
+                var version = @json($version);
+                var date = new Date().toISOString().slice(0, 10);
+                return 'struktur-organisasi-' + version + '-' + date + '.' + ext;
+            }
+
+            function download(canvas, format) {
+                var mime = format === 'jpg' ? 'image/jpeg' : 'image/png';
+                return new Promise(function (resolve, reject) {
+                    canvas.toBlob(function (blob) {
+                        if (!blob) return reject(new Error('Gambar terlalu besar untuk dibuat.'));
+                        var url = URL.createObjectURL(blob);
+                        var a = document.createElement('a');
+                        a.href = url;
+                        a.download = fileName(format);
+                        document.body.appendChild(a);
+                        a.click();
+                        a.remove();
+                        setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+                        resolve();
+                    }, mime, 0.92);
+                });
+            }
+
+            function exportImage(format, scope) {
+                var root = document.documentElement;
+                var scrollPos = { x: window.scrollX, y: window.scrollY };
+                function restore() {
+                    root.classList.remove('is-exporting');
+                    window.scrollTo(scrollPos.x, scrollPos.y);
+                }
+
+                setBusy(true, 'Membuat gambar…');
+                root.classList.add('is-exporting');
+                window.scrollTo(0, 0); // html2canvas menghitung posisi dari atas halaman
+
+                return Promise.all([loadHtml2Canvas(), loadAllImages(), document.fonts ? document.fonts.ready : null])
+                    .then(function (results) {
+                        var html2canvas = results[0];
+                        var target = document.body;
+                        var height = scope === 'chart'
+                            ? document.querySelector('.org-chart').getBoundingClientRect().bottom + 32
+                            : target.scrollHeight;
+                        var scale = Math.min(2, Math.sqrt(MAX_PIXELS / (EXPORT_WIDTH * height)));
+
+                        return html2canvas(target, {
+                            backgroundColor: BACKGROUND,
+                            scale: scale,
+                            width: EXPORT_WIDTH,
+                            height: height,
+                            windowWidth: EXPORT_WIDTH,
+                            x: 0,
+                            y: 0,
+                            useCORS: true,
+                            logging: false,
+                            // Tombol, tautan & status tidak ikut; "Bagan saja" melewati daftar staf.
+                            ignoreElements: function (el) {
+                                if (!el.classList) return false;
+                                if (el.classList.contains('org-actions') || el.classList.contains('org-header__link')
+                                    || el.classList.contains('org-export__status')) {
+                                    return true;
+                                }
+                                return scope === 'chart' && (el.classList.contains('org-units') || el.classList.contains('org-footer'));
+                            },
+                            // html2canvas belum mendukung object-fit: ganti foto dengan latar "cover".
+                            onclone: function (doc) {
+                                Array.prototype.forEach.call(doc.querySelectorAll('img.org-avatar'), function (img) {
+                                    var span = doc.createElement('span');
+                                    span.className = img.className;
+                                    span.style.backgroundImage = 'url("' + img.currentSrc + '")';
+                                    span.style.backgroundSize = 'cover';
+                                    span.style.backgroundPosition = 'center';
+                                    img.replaceWith(span);
+                                });
+                            }
+                        });
+                    })
+                    .then(function (canvas) {
+                        restore();
+                        return download(canvas, format);
+                    })
+                    .then(function () {
+                        setBusy(false, 'Gambar berhasil diunduh.');
+                        setTimeout(function () { status.textContent = ''; }, 4000);
+                    })
+                    .catch(function (error) {
+                        restore();
+                        setBusy(false, (error && error.message) || 'Gagal membuat gambar.');
+                    });
+            }
+
+            Array.prototype.forEach.call(exportButtons, function (button) {
+                button.addEventListener('click', function () {
+                    exportImage(button.getAttribute('data-format'), document.getElementById('org-export-scope').value);
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
