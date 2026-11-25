@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="SIGARDA">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a5a2b"/>
+      <stop offset="1" stop-color="#63401e"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M12.64 14.987Q13.653 14.987 14.32 14.267Q14.987 13.547 14.987 12.48L14.987 5.013L1.013 5.013L1.013 12.48Q1.013 13.547 1.68 14.267Q2.347 14.987 3.36 14.987L12.64 14.987ZM5.493 6.987L10.507 6.987Q10.72 6.987 10.853 7.147Q10.987 7.307 10.987 7.52Q10.987 7.733 10.853 7.867Q10.72 8 10.507 8L5.493 8Q5.28 8 5.147 7.867Q5.013 7.733 5.013 7.52Q5.013 7.307 5.147 7.147Q5.28 6.987 5.493 6.987ZM0.8 1.013Q0.48 1.013 0.24 1.253Q0 1.493 0 1.813L0 2.987Q0 3.307 0.24 3.547Q0.48 3.787 0.8 3.787L15.2 3.787Q15.52 3.787 15.76 3.547Q16 3.307 16 2.987L16 1.813Q16 1.493 15.76 1.253Q15.52 1.013 15.2 1.013L0.8 1.013Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="24.2" letter-spacing=".5" fill="#fff">SIGARDA</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="LAPKIN">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a6f7a"/>
+      <stop offset="1" stop-color="#1e4f57"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M0 0L1.013 0L1.013 14.987L16 14.987L16 16L0 16L0 0ZM10.027 3.52Q10.027 3.307 10.16 3.147Q10.293 2.987 10.507 2.987L14.507 2.987Q14.72 2.987 14.853 3.147Q14.987 3.307 14.987 3.52L14.987 7.52Q14.987 7.733 14.853 7.867Q14.72 8 14.507 8Q14.293 8 14.133 7.867Q13.973 7.733 13.973 7.52L13.973 4.907L10.4 9.333Q10.24 9.493 10.027 9.493Q9.813 9.493 9.653 9.333L7.04 6.773L3.413 11.787Q3.253 11.947 3.067 11.973Q2.88 12 2.72 11.893Q2.56 11.787 2.533 11.573Q2.507 11.36 2.613 11.2L6.613 5.707Q6.72 5.493 6.96 5.493Q7.2 5.493 7.36 5.653L9.973 8.267L13.44 4L10.507 4Q10.293 4 10.133 3.867Q9.973 3.733 9.973 3.52L10.027 3.52Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">LAPKIN</text>
+</svg>

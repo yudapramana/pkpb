@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="EMIS">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2c5d8a"/>
+      <stop offset="1" stop-color="#1f4263"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M8.213 2.027Q8 1.973 7.787 2.027L0.267 5.547Q0 5.707 0 6.027Q0 6.347 0.32 6.453L7.84 9.44Q8 9.547 8.16 9.44L14.027 7.147L14.027 13.013Q13.6 13.013 13.307 13.307Q13.013 13.6 13.013 13.973L13.013 16L16 16L16 13.973Q16 13.6 15.707 13.307Q15.413 13.013 14.987 13.013L14.987 6.72L15.68 6.453Q16 6.347 16 6.027Q16 5.707 15.733 5.547L8.213 2.027ZM4.16 9.013Q3.947 8.96 3.76 9.067Q3.573 9.173 3.52 9.333L3.04 11.04Q2.987 11.253 3.067 11.413Q3.147 11.573 3.307 11.68L7.84 13.44Q8 13.547 8.16 13.44L12.693 11.68Q12.853 11.573 12.933 11.413Q13.013 11.253 12.96 11.04L12.48 9.333Q12.427 9.173 12.24 9.067Q12.053 8.96 11.84 9.013L8 10.453L4.16 9.013Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">EMIS</text>
+</svg>

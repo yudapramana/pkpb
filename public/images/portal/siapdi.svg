@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="SIAPDI">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24524f"/>
+      <stop offset="1" stop-color="#193b38"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M4 0.48Q4 0.267 3.867 0.133Q3.733 0 3.52 0Q3.307 0 3.147 0.133Q2.987 0.267 2.987 0.48L2.987 1.013L2.027 1.013Q1.173 1.013 0.587 1.6Q0 2.187 0 2.987L0 4L16 4L16 2.987Q16 2.187 15.413 1.6Q14.827 1.013 13.973 1.013L13.013 1.013L13.013 0.48Q13.013 0.267 12.853 0.133Q12.693 0 12.48 0Q12.267 0 12.133 0.133Q12 0.267 12 0.48L12 1.013L4 1.013L4 0.48ZM16 13.973L16 5.013L0 5.013L0 13.973Q0 14.827 0.587 15.413Q1.173 16 1.973 16L14.027 16Q14.827 16 15.413 15.413Q16 14.827 16 13.973ZM12.48 6.987L13.493 6.987Q13.707 6.987 13.867 7.147Q14.027 7.307 14.027 7.52L14.027 8.48Q14.027 8.693 13.867 8.853Q13.707 9.013 13.493 9.013L12.48 9.013Q12.267 9.013 12.133 8.853Q12 8.693 12 8.48L12 7.52Q12 7.307 12.133 7.147Q12.267 6.987 12.48 6.987Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">SIAPDI</text>
+</svg>

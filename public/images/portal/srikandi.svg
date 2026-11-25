@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="SRIKANDI">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b4b8a"/>
+      <stop offset="1" stop-color="#413663"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M6.507 9.493L2.987 7.52L2.987 1.493Q2.987 0.853 3.44 0.427Q3.893 0 4.48 0L11.52 0Q12.107 0 12.56 0.427Q13.013 0.853 13.013 1.493L13.013 7.52L9.493 9.493L8 8.747L6.507 9.493ZM1.067 3.627L2.027 3.147L2.027 6.88L0 5.707L0 5.387Q0 4.853 0.293 4.373Q0.587 3.893 1.067 3.627ZM16 5.707L14.027 6.88L14.027 3.147L14.933 3.627Q15.413 3.893 15.707 4.373Q16 4.853 16 5.387L16 5.707ZM16 6.88L10.293 10.187L16 13.387L16 6.88ZM8 10.08L15.947 14.507Q15.787 15.147 15.227 15.573Q14.667 16 13.973 16L2.027 16Q1.333 16 0.773 15.573Q0.213 15.147 0.053 14.507L8 10.08ZM0 13.387L5.707 10.187L0 6.88L0 13.387Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="21.2" letter-spacing=".5" fill="#fff">SRIKANDI</text>
+</svg>

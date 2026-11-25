@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="robots" content="noindex, nofollow">
-    <title>@yield('title', 'Admin') - Struktur Organisasi</title>
+    <title>@yield('title', 'Admin') - Admin Portal Kemenag Pessel</title>
 
     <link href="{{ asset('arsha/assets/img/favicon.png') }}" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -89,7 +89,7 @@
     <nav class="navbar navbar-expand-md navbar-dark admin-nav">
         <div class="container">
             <a class="navbar-brand fw-semibold" href="{{ route('admin.dashboard') }}">
-                <i class="bi bi-diagram-3"></i> Admin Struktur Organisasi
+                <i class="bi bi-grid-1x2"></i> Admin Portal
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNav"
                 aria-controls="adminNav" aria-expanded="false" aria-label="Buka menu">
@@ -105,6 +105,10 @@
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('admin.work-units.*') ? 'active' : '' }}"
                             href="{{ route('admin.work-units.index') }}">Unit Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('admin.portal-items.*') ? 'active' : '' }}"
+                            href="{{ route('admin.portal-items.index') }}">Item Portal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('organization.index') }}" target="_blank" rel="noopener">

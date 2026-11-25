@@ -14,12 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $portalItems = \App\Models\PortalItem::active()->ordered()->get();
 
-    $portalItems = \App\Models\PortalItem::all();
-
-    // return $portalItems;
-
-    return view('welcome', [ 'portal_items' => $portalItems]);
+    return view('welcome', ['portal_items' => $portalItems]);
 });
 
 Route::get('/struktur-organisasi', [App\Http\Controllers\OrganizationStructureController::class, 'index'])
@@ -46,6 +43,11 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
         ->except('show')
         ->names('employees')
         ->parameters(['pegawai' => 'employee']);
+
+    Route::resource('portal', App\Http\Controllers\Admin\PortalItemController::class)
+        ->except('show')
+        ->names('portal-items')
+        ->parameters(['portal' => 'portalItem']);
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

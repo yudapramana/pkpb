@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="SIGAP">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8742b"/>
+      <stop offset="1" stop-color="#90531e"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M11.253 0.053Q11.413 0.16 11.467 0.32Q11.52 0.48 11.467 0.64L9.653 6.507L13.013 6.507Q13.333 6.507 13.467 6.8Q13.6 7.093 13.387 7.36L5.387 15.84Q5.227 15.947 5.067 15.973Q4.907 16 4.747 15.92Q4.587 15.84 4.533 15.68Q4.48 15.52 4.533 15.36L6.347 9.493L2.987 9.493Q2.667 9.493 2.533 9.2Q2.4 8.907 2.613 8.64L10.613 0.16Q10.773 0.053 10.933 0.027Q11.093 0 11.253 0.053Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">SIGAP</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="SIMKAH">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8e3b46"/>
+      <stop offset="1" stop-color="#662a32"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M8 1.333Q8.8 0.48 9.867 0.187Q10.933 -0.107 12.053 0.08Q13.173 0.267 14.08 0.933Q14.987 1.6 15.52 2.64Q16.053 3.68 16 4.96Q15.947 6.347 15.2 7.893Q14.347 9.547 12.64 11.253Q10.773 13.173 8 14.987Q5.227 13.173 3.36 11.253Q1.653 9.547 0.8 7.893Q0.053 6.347 0 4.96Q-0.053 3.68 0.48 2.64Q1.013 1.6 1.92 0.933Q2.827 0.267 3.947 0.08Q5.067 -0.107 6.133 0.187Q7.2 0.48 8 1.333Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">SIMKAH</text>
+</svg>

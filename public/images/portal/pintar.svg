@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="PINTAR">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8862a"/>
+      <stop offset="1" stop-color="#84601e"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M2.027 5.973Q1.973 3.947 3.227 2.32Q4.48 0.693 6.48 0.187Q8.48 -0.32 10.347 0.48Q12.213 1.28 13.227 3.067Q14.24 4.853 13.947 6.88Q13.653 8.907 12.16 10.293Q11.84 10.613 11.733 10.933L10.933 12.693Q10.827 13.013 10.507 13.013L5.493 13.013Q5.173 13.013 5.067 12.693L4.267 10.933Q4.107 10.56 3.84 10.293Q2.933 9.44 2.453 8.32Q1.973 7.2 1.973 5.973L2.027 5.973ZM5.013 14.507Q5.013 14.293 5.147 14.133Q5.28 13.973 5.493 13.973L10.507 13.973Q10.72 13.973 10.853 14.133Q10.987 14.293 10.987 14.507Q10.987 14.72 10.853 14.853Q10.72 14.987 10.507 14.987L10.293 15.467Q10.133 15.68 9.893 15.84Q9.653 16 9.387 16L6.613 16Q6.347 16 6.107 15.84Q5.867 15.68 5.707 15.467L5.493 14.987Q5.28 14.987 5.147 14.853Q5.013 14.72 5.013 14.507Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">PINTAR</text>
+</svg>
