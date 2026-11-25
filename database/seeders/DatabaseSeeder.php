@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $this->call(PortalItemSeeder::class);
+        // Pegawai dulu, agar akun user bisa ditautkan ke data pegawainya.
+        $this->call(OrganizationStructureSeeder::class);
         $this->call(UserTableSeeder::class);
 
 
