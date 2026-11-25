@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="QURAN">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2e7d4f"/>
+      <stop offset="1" stop-color="#215a38"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M8 1.76Q6.72 0.693 4.267 0.96Q3.253 1.067 2.08 1.387Q1.12 1.653 0.267 2.027Q0 2.187 0 2.507L0 13.493Q0 13.76 0.24 13.92Q0.48 14.08 0.693 13.973Q1.493 13.6 2.347 13.333Q3.413 13.013 4.373 12.96Q6.72 12.693 7.627 13.813Q7.787 13.973 8 13.973Q8.213 13.973 8.373 13.813Q9.28 12.693 11.627 12.96Q12.587 13.013 13.653 13.333Q14.56 13.6 15.307 13.973Q15.52 14.08 15.76 13.92Q16 13.76 16 13.493L16 2.507Q16 2.187 15.733 2.027Q14.88 1.653 13.92 1.387Q12.747 1.067 11.733 0.96Q9.28 0.693 8 1.76Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">QURAN</text>
+</svg>

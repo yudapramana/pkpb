@@ -108,10 +108,34 @@ class PortalItemSeeder extends Seeder
                 'sort_order' => 200,
             ],
             [
+                'title' => 'Kanwil Kemenag Sumbar',
+                'image_url' => '/images/portal/kanwil.svg',
+                'destination_url' => 'https://sumbar.kemenag.go.id',
+                'sort_order' => 202,
+            ],
+            [
+                'title' => 'Layanan Publik Kemenag',
+                'image_url' => '/images/portal/layanan.svg',
+                'destination_url' => 'https://kemenag.go.id/layanan',
+                'sort_order' => 204,
+            ],
+            [
+                'title' => 'SSO Kemenag',
+                'image_url' => '/images/portal/sso.svg',
+                'destination_url' => 'https://sso.kemenag.go.id',
+                'sort_order' => 206,
+            ],
+            [
                 'title' => 'Pusaka SuperApps',
                 'image_url' => '/images/portal/pusaka.svg',
-                'destination_url' => 'https://pusaka.kemenag.go.id',
+                'destination_url' => 'https://pusaka-v3.kemenag.go.id',
                 'sort_order' => 210,
+            ],
+            [
+                'title' => 'Presensi Online',
+                'image_url' => '/images/portal/presensi.svg',
+                'destination_url' => 'https://absensi.kemenag.go.id',
+                'sort_order' => 212,
             ],
             [
                 'title' => 'Satu Data',
@@ -125,6 +149,36 @@ class PortalItemSeeder extends Seeder
                 'destination_url' => 'https://pintar.kemenag.go.id',
                 'sort_order' => 230,
             ],
+            [
+                'title' => 'SIMDIKLAT',
+                'image_url' => '/images/portal/simdiklat.svg',
+                'destination_url' => 'https://simdiklat.kemenag.go.id',
+                'sort_order' => 232,
+            ],
+            [
+                'title' => "Qur'an Kemenag",
+                'image_url' => '/images/portal/quran.svg',
+                'destination_url' => 'https://quran.kemenag.go.id',
+                'sort_order' => 234,
+            ],
+            [
+                'title' => 'JDIH Kemenag',
+                'image_url' => '/images/portal/jdih.svg',
+                'destination_url' => 'https://jdih.kemenag.go.id',
+                'sort_order' => 236,
+            ],
+            [
+                'title' => 'SIAPI (Pengawasan Internal)',
+                'image_url' => '/images/portal/siapi.svg',
+                'destination_url' => 'https://siapi.kemenag.go.id',
+                'sort_order' => 238,
+            ],
+            [
+                'title' => 'LAPOR! (Pengaduan)',
+                'image_url' => '/images/portal/lapor.svg',
+                'destination_url' => 'https://lapor.go.id',
+                'sort_order' => 240,
+            ],
 
             // Sub Bagian Tata Usaha (kepegawaian & persuratan)
             [
@@ -132,6 +186,18 @@ class PortalItemSeeder extends Seeder
                 'image_url' => '/images/portal/simpeg.svg',
                 'destination_url' => 'https://simpeg5.kemenag.go.id',
                 'sort_order' => 300,
+            ],
+            [
+                'title' => 'MyASN (BKN)',
+                'image_url' => '/images/portal/myasn.svg',
+                'destination_url' => 'https://myasn.bkn.go.id',
+                'sort_order' => 302,
+            ],
+            [
+                'title' => 'e-Kinerja (BKN)',
+                'image_url' => '/images/portal/ekinerja.svg',
+                'destination_url' => 'https://kinerja.bkn.go.id',
+                'sort_order' => 304,
             ],
             [
                 'title' => 'SRIKANDI',
@@ -152,6 +218,12 @@ class PortalItemSeeder extends Seeder
                 'image_url' => '/images/portal/simpatika.svg',
                 'destination_url' => 'https://simpatika.kemenag.go.id',
                 'sort_order' => 410,
+            ],
+            [
+                'title' => 'PIP Madrasah',
+                'image_url' => '/images/portal/pip.svg',
+                'destination_url' => 'https://pip.kemenag.go.id',
+                'sort_order' => 415,
             ],
             [
                 'title' => 'RDM (Rapor Digital Madrasah)',

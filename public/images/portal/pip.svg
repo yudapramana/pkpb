@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="PIP">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8862a"/>
+      <stop offset="1" stop-color="#84601e"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M12.16 0.32Q12.853 0.16 13.413 0.613Q13.973 1.067 14.027 1.76L14.027 2.987L14.507 2.987Q15.147 2.987 15.573 3.44Q16 3.893 16 4.48L16 13.493Q16 14.133 15.573 14.56Q15.147 14.987 14.507 14.987L1.493 14.987Q0.853 14.987 0.427 14.56Q0 14.133 0 13.493L0 4.48Q0 3.893 0.427 3.467Q0.853 3.04 1.44 2.987L12.16 0.32ZM5.547 2.987L13.013 2.987L13.013 1.76Q13.013 1.547 12.827 1.387Q12.64 1.227 12.373 1.28L5.547 2.987ZM1.493 4Q1.28 4 1.147 4.133Q1.013 4.267 1.013 4.48L1.013 13.493Q1.013 13.707 1.147 13.84Q1.28 13.973 1.493 13.973L14.507 13.973Q14.72 13.973 14.853 13.84Q14.987 13.707 14.987 13.493L14.987 4.48Q14.987 4.267 14.853 4.133Q14.72 4 14.507 4L1.493 4Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">PIP</text>
+</svg>

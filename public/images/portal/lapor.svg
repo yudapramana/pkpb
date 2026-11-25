@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="LAPOR!">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b23a3a"/>
+      <stop offset="1" stop-color="#802929"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M13.013 2.507Q13.013 1.867 13.44 1.44Q13.867 1.013 14.507 1.013Q15.147 1.013 15.573 1.44Q16 1.867 16 2.507L16 13.493Q16 14.133 15.573 14.56Q15.147 14.987 14.507 14.987Q13.867 14.987 13.44 14.56Q13.013 14.133 13.013 13.493L13.013 2.507ZM12 3.2Q9.013 4.587 5.013 4.907L5.013 11.093L6.08 11.2Q9.44 11.52 12 12.747L12 3.2ZM4 11.04L4 4.96L1.973 5.013Q1.173 5.013 0.587 5.6Q0 6.187 0 6.987L0 9.013Q0 9.813 0.587 10.4Q1.173 10.987 1.973 10.987L4 11.04ZM5.387 12.16Q5.813 12.16 6.24 12.213L6.507 13.92Q6.56 14.4 6.267 14.747Q5.973 15.093 5.493 15.093L4.96 15.093Q4.64 15.093 4.4 14.933Q4.16 14.773 4.053 14.507L2.72 12L5.387 12.16Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">LAPOR!</text>
+</svg>

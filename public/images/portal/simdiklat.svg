@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="SIMDIKLAT">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8742b"/>
+      <stop offset="1" stop-color="#90531e"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M8.427 0.267Q8.32 0 8 0Q7.68 0 7.573 0.267L7.2 1.013L2.507 1.013Q1.867 1.013 1.44 1.44Q1.013 1.867 1.013 2.507L1.013 9.973L14.987 9.973L14.987 2.507Q14.987 1.867 14.56 1.44Q14.133 1.013 13.493 1.013L8.8 1.013L8.427 0.267ZM0.48 10.987Q0.267 10.987 0.133 11.147Q0 11.307 0 11.52Q0 11.733 0.133 11.867Q0.267 12 0.48 12L3.36 12L2.507 15.36Q2.453 15.573 2.56 15.76Q2.667 15.947 2.88 15.973Q3.093 16 3.253 15.92Q3.413 15.84 3.467 15.627L3.893 13.973L12.107 13.973L12.533 15.627Q12.587 15.84 12.747 15.92Q12.907 16 13.12 15.973Q13.333 15.947 13.44 15.76Q13.547 15.573 13.493 15.36L12.64 12L15.52 12Q15.733 12 15.867 11.867Q16 11.733 16 11.52Q16 11.307 15.867 11.147Q15.733 10.987 15.52 10.987L0.48 10.987ZM4.16 13.013L4.373 12L11.627 12L11.84 13.013L4.16 13.013Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="18.9" letter-spacing=".5" fill="#fff">SIMDIKLAT</text>
+</svg>

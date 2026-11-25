@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="SIAPI">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b4b8a"/>
+      <stop offset="1" stop-color="#413663"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="url(#g)"/>
+  <circle cx="138" cy="18" r="46" fill="#fff" fill-opacity=".08"/>
+  <circle cx="18" cy="150" r="30" fill="#fff" fill-opacity=".06"/>
+  <path transform="translate(46 22) scale(4.25)" fill="#fff" d="M8 0Q7.147 0 5.067 0.533Q3.787 0.907 2.187 1.44Q1.76 1.547 1.467 1.893Q1.173 2.24 1.12 2.667Q0.747 5.813 1.547 8.533Q2.187 10.827 3.627 12.693Q4.693 14.08 6.133 15.147Q6.667 15.52 7.173 15.76Q7.68 16 8 16Q8.32 16 8.853 15.76Q9.387 15.52 9.867 15.147Q11.307 14.08 12.373 12.693Q13.813 10.827 14.453 8.533Q15.253 5.813 14.88 2.667Q14.827 2.24 14.533 1.893Q14.24 1.547 13.813 1.44Q12.373 0.96 10.933 0.533Q8.853 0 8 0ZM10.133 5.12Q10.293 5.013 10.507 5.013Q10.72 5.013 10.853 5.147Q10.987 5.28 10.987 5.493Q10.987 5.707 10.88 5.867L7.84 8.853Q7.733 9.013 7.52 9.013Q7.307 9.013 7.147 8.853L5.653 7.36Q5.493 7.2 5.493 6.987Q5.493 6.773 5.653 6.64Q5.813 6.507 6 6.507Q6.187 6.507 6.347 6.667L7.52 7.787L10.133 5.12Z"/>
+  <text x="80" y="134" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-weight="700" font-size="26.0" letter-spacing=".5" fill="#fff">SIAPI</text>
+</svg>
